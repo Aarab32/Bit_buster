@@ -1,0 +1,6 @@
+com\learn\ecommerce\JAXRSConfiguration.class
+com\learn\ecommerce\entities\Product.class
+com\learn\ecommerce\resources\JavaEE8Resource.class
+com\learn\ecommerce\entities\User.class
+com\learn\ecommerce\helper\FactoryProvider.class
+com\learn\ecommerce\entities\Category.class
