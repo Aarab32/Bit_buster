@@ -4,3 +4,4 @@ com\learn\ecommerce\resources\JavaEE8Resource.class
 com\learn\ecommerce\entities\User.class
 com\learn\ecommerce\helper\FactoryProvider.class
 com\learn\ecommerce\entities\Category.class
+com\learn\ecommerce\servlet\RegisterServlet.class

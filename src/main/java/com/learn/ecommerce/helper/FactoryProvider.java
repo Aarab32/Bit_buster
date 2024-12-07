@@ -15,8 +15,6 @@ public static SessionFactory getFactory(){
     } catch (Exception e) {
         e.printStackTrace();
     }
-    
-    
-    return factory;
+     return factory;
 }
 }
