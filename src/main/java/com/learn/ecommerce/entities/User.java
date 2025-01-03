@@ -1,6 +1,6 @@
-
 package com.learn.ecommerce.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,7 +11,8 @@ import javax.persistence.Id;
  * @author aarab
  */
 @Entity
-public class User  {
+public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int userId;
@@ -22,10 +23,13 @@ public class User  {
     private String userPic;
     private String userAddress;
 
+    @Column(name = "user_type")
+    private String userType;
+
     public User() {
     }
 
-    public User(int userId, String userName, String userEmail, String userPassword, String userPhone, String userPic, String userAddress) {
+    public User(int userId, String userName, String userEmail, String userPassword, String userPhone, String userPic, String userAddress, String userType) {
         this.userId = userId;
         this.userName = userName;
         this.userEmail = userEmail;
@@ -33,15 +37,17 @@ public class User  {
         this.userPhone = userPhone;
         this.userPic = userPic;
         this.userAddress = userAddress;
+        this.userType = userType;
     }
 
-    public User(String userName, String userEmail, String userPassword, String userPhone, String userPic, String userAddress) {
+    public User(String userName, String userEmail, String userPassword, String userPhone, String userPic, String userAddress, String userType) {
         this.userName = userName;
         this.userEmail = userEmail;
         this.userPassword = userPassword;
         this.userPhone = userPhone;
         this.userPic = userPic;
         this.userAddress = userAddress;
+        this.userType = userType;
     }
 
     public int getUserId() {
@@ -100,11 +106,17 @@ public class User  {
         this.userAddress = userAddress;
     }
 
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType = userType;
+    }
+
     @Override
     public String toString() {
         return "User{" + "userId=" + userId + ", userName=" + userName + ", userEmail=" + userEmail + ", userPassword=" + userPassword + ", userPhone=" + userPhone + ", userPic=" + userPic + ", userAddress=" + userAddress + '}';
     }
-    
-    
-    
+
 }

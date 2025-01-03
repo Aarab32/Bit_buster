@@ -1,8 +1,4 @@
-<%-- 
-    Document   : index
-    Created on : 10 Nov 2024, 9:28:54 pm
-    Author     : aarab
---%>
+
 
 <%@page import="com.learn.ecommerce.helper.FactoryProvider"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

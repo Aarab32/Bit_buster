@@ -12,6 +12,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -47,7 +48,7 @@ public class RegisterServlet extends HttpServlet {
                return;
            }
            //creating user object to store data
-          User user= new User(userName, userEmail, userPassword, userPhone, "default.jpg", userAddress);
+          User user= new User(userName, userEmail, userPassword, userPhone, "default.jpg", userAddress,"normal");
    
            Session hibernateSession = FactoryProvider.getFactory().openSession();
            
@@ -59,8 +60,11 @@ public class RegisterServlet extends HttpServlet {
            
            tx.commit();
           hibernateSession.close();
-           out.println("successfully saved");
-           out.println("<br> User id is" + userId);
+          HttpSession httpsession = request.getSession();
+          httpsession.setAttribute("message","Registration Successful "+ userId);
+          response.sendRedirect("register.jsp");
+          
+       
            
            
        }catch (Exception e){

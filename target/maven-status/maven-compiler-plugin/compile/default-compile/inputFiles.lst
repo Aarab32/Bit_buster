@@ -1,7 +1,13 @@
+D:\JAVA project\Ecommerce\src\main\java\com\learn\ecommerce\dao\CategoryDao.java
+D:\JAVA project\Ecommerce\src\main\java\com\learn\ecommerce\dao\ProductDao.java
+D:\JAVA project\Ecommerce\src\main\java\com\learn\ecommerce\dao\UserDao.java
 D:\JAVA project\Ecommerce\src\main\java\com\learn\ecommerce\entities\Category.java
 D:\JAVA project\Ecommerce\src\main\java\com\learn\ecommerce\entities\Product.java
 D:\JAVA project\Ecommerce\src\main\java\com\learn\ecommerce\entities\User.java
 D:\JAVA project\Ecommerce\src\main\java\com\learn\ecommerce\helper\FactoryProvider.java
 D:\JAVA project\Ecommerce\src\main\java\com\learn\ecommerce\JAXRSConfiguration.java
 D:\JAVA project\Ecommerce\src\main\java\com\learn\ecommerce\resources\JavaEE8Resource.java
+D:\JAVA project\Ecommerce\src\main\java\com\learn\ecommerce\servlet\LoginServlet.java
+D:\JAVA project\Ecommerce\src\main\java\com\learn\ecommerce\servlet\LogoutServlet.java
+D:\JAVA project\Ecommerce\src\main\java\com\learn\ecommerce\servlet\ProductOperationServlet.java
 D:\JAVA project\Ecommerce\src\main\java\com\learn\ecommerce\servlet\RegisterServlet.java
