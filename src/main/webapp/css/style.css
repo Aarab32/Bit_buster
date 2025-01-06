@@ -1,5 +1,5 @@
 .custom-bg{
-    background: black;
+    background: bottom;
 }
 /* General Styles */
 body {
@@ -86,3 +86,7 @@ textarea.form-control {
     resize: none; /* Disable resizing */
 }
 
+.discount-lable{
+    font-size: 10px;
+    font-style: italic;
+}

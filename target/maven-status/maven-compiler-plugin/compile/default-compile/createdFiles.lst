@@ -2,6 +2,7 @@ com\learn\ecommerce\resources\JavaEE8Resource.class
 com\learn\ecommerce\helper\FactoryProvider.class
 com\learn\ecommerce\servlet\LogoutServlet.class
 com\learn\ecommerce\servlet\ProductOperationServlet.class
+com\learn\ecommerce\helper\Helper.class
 com\learn\ecommerce\JAXRSConfiguration.class
 com\learn\ecommerce\entities\Product.class
 com\learn\ecommerce\entities\User.class

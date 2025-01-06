@@ -120,4 +120,10 @@ public class Product  {
     }
   
     
+   public int getPriceAfterDiscount(){
+       int d=(int) ((this.getpDiscount()/100.0)*this.getpPrice());
+       return this.getpPrice()-d;
+    }
+    
+
 }

@@ -12,7 +12,7 @@ const errorMessages = {
     email: document.getElementById("email-error"),
     password: document.getElementById("password-error"),
     subject: document.getElementById("subject-error"),
-    agree: document.getElementById("agree-error"),
+    agree: document.getElementById("agree-error")
 };
 
 // Clear error messages
@@ -67,11 +67,4 @@ function validateForm() {
     return isValid;
 }
 
-// Handle form submission
-form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent default form submission
-    if (validateForm()) {
-        alert("Form submitted successfully!");
-        form.reset(); // Reset the form
-    }
-});
+

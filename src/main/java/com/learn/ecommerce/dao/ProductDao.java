@@ -2,6 +2,8 @@
 package com.learn.ecommerce.dao;
 
 import com.learn.ecommerce.entities.Product;
+import java.util.List;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -34,5 +36,24 @@ public class ProductDao {
         }
         return f;
     }
+  
+    public List<Product> getAllproducts(){
+          Session s = this.factory.openSession();
+          Query query = s.createQuery("from Product");
+          List<Product> list = query.list();          
+          return list;
+          
+    }
+    public List<Product> getAllproductsById(int cid){
+          Session s = this.factory.openSession();
+          Query query = s.createQuery("from Product as p where p.category.categoryId =:id");
+          query.setParameter("id" , cid);
+          List<Product> list = query.list();          
+          return list;
+          
+    }
+   
+ 
+    
     
 }
